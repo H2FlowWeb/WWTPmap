@@ -1,457 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wastewater Treatment Plant Equipment Map</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-      .equipment-container {
-        position: relative;
-        width: 100%;
-        max-height: 80vh;
-        aspect-ratio: 4 / 3;
-      }
-      .equipment-img {
-        width: 350px;
-        height: 300px;
-        object-fit: cover;
-        object-position: center;
-        cursor: pointer;
-        transition: opacity 0.3s;
-        border: 1px solid #ddd; /* Subtle border for failed loads */
-      }
-      .equipment-img:hover {
-        opacity: 0.8;
-      }
-      .equipment-img[src=""] {
-        background: #f8f9fa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6c757d;
-        font-size: 1rem;
-      }
-      .img-label {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        color: black;
-        font-size: 1.25rem;
-        font-weight: bold;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 4px 8px;
-        border-radius: 4px;
-        pointer-events: none;
-      }
-      .popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white;
-        padding: 20px;
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        width: 90%;
-        max-width: 500px;
-        overscroll-behavior: contain;
-      }
-      .popup.show {
-        display: block;
-      }
-      .equipment-list {
-        max-height: 500px;
-        overflow-y: auto;
-        overscroll-behavior: contain;
-      }
-      .equipment-item {
-        cursor: pointer;
-        padding: 10px;
-        margin: 5px 0;
-      }
-      .equipment-item:hover {
-        background: #e9ecef;
-      }
-      .video-popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white;
-        padding: 20px;
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1001;
-        width: 65vw;
-        overscroll-behavior: contain;
-      }
-      .video-popup.show {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        font-size: 20px;
-        z-index: 1002;
-      }
-      #overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-      }
-      #overlay.show {
-        display: block;
-      }
-      #equipment-video {
-        width: 100%;
-        max-width: 1000px;
-        height: 638px;
-        border: none;
-      }
-    </style>
+    <title>H2Flow Wastewater Treatment Equipment Map</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-light">
-    <div class="container p-4">
-      <h1 class="h1 fw-bold text-center mb-4">
-        Wastewater Treatment Plant Equipment
-      </h1>
-      <div class="equipment-container">
-        <div class="row g-2">
-          <!-- Headworks -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/Headworks.jpg"
-              alt="Headworks"
-              class="equipment-img img-fluid"
-              data-area="headworks"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Headworks</span>
-          </div>
-          <!-- Primary Clarification -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/TravellingBridge.jpg"
-              alt="Primary Clarification"
-              class="equipment-img img-fluid"
-              data-area="primary_clarification"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Primary Clarification</span>
-          </div>
-          <!-- Aeration -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/Aeration.jpg"
-              alt="Aeration"
-              class="equipment-img img-fluid"
-              data-area="aeration"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Aeration</span>
-          </div>
-          <!-- Nutrient Removal -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/mabr.jpg"
-              alt="Nutrient Removal"
-              class="equipment-img img-fluid"
-              data-area="nutrient_removal"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Nutrient Removal</span>
-          </div>
-          <!-- Secondary Clarification -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/SecondaryClarifier.jpg"
-              alt="Secondary Clarification"
-              class="equipment-img img-fluid"
-              data-area="secondary_clarification"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Secondary Clarification</span>
-          </div>
-          <!-- Tertiary Filtration -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/DiscFilter.jpg"
-              alt="Tertiary Clarification"
-              class="equipment-img img-fluid"
-              data-area="tertiary_clarification"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Tertiary Filtration</span>
-          </div>
-          <!-- Disinfection -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/Disinfection.jpg"
-              alt="Disinfection"
-              class="equipment-img img-fluid"
-              data-area="disinfection"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Disinfection</span>
-          </div>
-          <!-- Thickening/Digestion -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/Digester.jpg"
-              alt="Thickening/Digestion"
-              class="equipment-img img-fluid"
-              data-area="thickening_digestion"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Thickening/Digestion</span>
-          </div>
-          <!-- Biosolids -->
-          <div class="col-4 position-relative">
-            <img
-              src="images/Dewatering.jpg"
-              alt="Biosolids"
-              class="equipment-img img-fluid"
-              data-area="biosolids"
-              onerror="this.src=''; this.alt='Image not found - Check images/ folder'"
-            />
-            <span class="img-label">Biosolids</span>
+
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand-wrap">
+          <button class="brand-button" type="button" aria-label="H2Flow">
+            <span class="brand-mark"
+              ><img src="images/H2FlowLogo.png" alt="H2Flow logo"
+            /></span>
+          </button>
+          <div class="header-copy">
+            <h1>Wastewater Treatment Equipment Map</h1>
+            <p>
+              Tap any process area to explore representative equipment and
+              videos.
+            </p>
           </div>
         </div>
+        <div class="header-tools">
+          <button id="fullscreenButton" class="ghost-button" type="button">
+            Fullscreen
+          </button>
+        </div>
+      </header>
+      <main class="app-main">
+      
+        <section id="statusCard" class="status-card">
+          <p>Loading equipment map…</p>
+        </section>
+        <section
+          id="tileGrid"
+          class="tile-grid"
+          hidden
+          aria-label="Wastewater treatment process areas"
+        ></section>
+      </main>
+      <footer class="app-footer">
+        <p>© 2026 H2Flow</p>
+      </footer>
+    </div>
+    <div id="overlay" class="overlay is-hidden" aria-hidden="true"></div>
+    <section
+      id="equipmentModal"
+      class="modal equipment-modal is-hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="equipmentModalTitle"
+    >
+      <button
+        id="equipmentCloseButton"
+        class="close-button"
+        type="button"
+        aria-label="Close equipment list"
+      >
+        ×
+      </button>
+      <div class="modal-header-block">
+        <h2 id="equipmentModalTitle">Equipment</h2>
+        <p class="modal-subtitle">Sorted by vendor</p>
       </div>
-
-      <!-- Overlay for dimming background -->
-      <div id="overlay"></div>
-
-      <!-- Equipment List Popup -->
-      <div id="equipment-popup" class="popup">
-        <span class="close-btn" onclick="closePopup('equipment-popup')">×</span>
-        <h2 id="popup-title" class="h2 fw-bold mb-4"></h2>
-        <div id="equipment-list" class="equipment-list list-group"></div>
-      </div>
-
-      <!-- Video Popup -->
-      <div id="video-popup" class="video-popup">
-        <span class="close-btn" onclick="closePopup('video-popup')">×</span>
-        <h2 id="video-title" class="h2 fw-bold mb-4"></h2>
+      <div id="equipmentList" class="equipment-list"></div>
+    </section>
+    <section
+      id="videoModal"
+      class="modal video-modal is-hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="videoModalTitle"
+    >
+      <button
+        id="videoCloseButton"
+        class="close-button"
+        type="button"
+        aria-label="Close video"
+      >
+        ×
+      </button>
+      <h2 id="videoModalTitle">Video</h2>
+      <div class="video-frame-wrap">
         <iframe
-          id="equipment-video"
+          id="videoFrame"
+          title="Equipment video"
           src=""
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
           allowfullscreen
           referrerpolicy="strict-origin-when-cross-origin"
           loading="lazy"
-          onerror="console.error('Iframe load failed:', this.src)"
-        ></iframe>
+        ></iframe
+        ><video
+          id="html5Video"
+          class="html5-video is-hidden"
+          controls
+          playsinline
+          preload="metadata"
+        ></video>
       </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const equipmentData = {
-        headworks: [
-          {
-            name: "Aqua Caiman Articulating Bar Rake Screen",
-            video:
-              "https://www.youtube.com/embed/3LXL-RKxPQE?si=hAH-Tf3T_yy2-PWD&cc_load_policy=1",
-          },
-          {
-            name: "Atara Grit Classifier",
-            video:
-              "https://www.youtube.com/embed/_bJnsIgltz4?si=3c7DoQQEZbl4uRcf&cc_load_policy=1",
-          },
-        ],
-        primary_clarification: [
-          {
-            name: "Ovivo Primary Circular Clarifier",
-            video:
-              "https://www.youtube.com/embed/S8CIyihMpTw?si=Bfm7VLNPcrdDdAQG&cc_load_policy=1",
-          },
-          {
-            name: "Ovivo Travelling Bridge Clarifier",
-            video:
-              "https://www.youtube.com/embed/A5owbzbAshM?si=Lq5AoPo4M8H3E7GD&cc_load_policy=1",
-          },
-        ],
-        aeration: [
-          {
-            name: "Ovivo Aerostrip Diffuser",
-            video:
-              "https://www.youtube.com/embed/ScnfkhCOjlk?si=qI4Qq1JjP2JHvDfP&cc_load_policy=1",
-          },
-          {
-            name: "Aerzen Blower System",
-            video:
-              "https://www.youtube.com/embed/YWX7nkkCyow?si=XO2t3-EoeXB7YDlq&cc_load_policy=1",
-          },
-          {
-            name: "Continental Centrifugal Blowers",
-            video:
-              "https://www.youtube.com/embed/i6r8zAizc0s?si=crwDK0dh5WQBr-8N&cc_load_policy=1",
-          },
-        ],
-        nutrient_removal: [
-          {
-            name: "Fluence MABR",
-            video:
-              "https://www.youtube.com/embed/GNhoWTdre20?si=Cq1jRlrjoK-JJGys&cc_load_policy=1",
-          },
-          {
-            name: "ISAM SBR",
-            video:
-              "https://www.youtube.com/embed/nd6hhDJlmuI?si=04Y-8ig2bxRgf8Kg&cc_load_policy=1",
-          },
-        ],
-        secondary_clarification: [
-          {
-            name: "Ovivo Secondary Clarifier",
-            video:
-              "https://www.youtube.com/embed/PUlTiUHBDFM?si=OhFxLQFbyxG9HrCf&cc_load_policy=1",
-          },
-        ],
-        tertiary_clarification: [
-          {
-            name: "Nuove Energie UltraScreen",
-            video:
-              "https://www.youtube.com/embed/jG9V7B-79T0?si=3nxACV6fK8rujod&cc_load_policy=1",
-          },
-          {
-            name: "Ovivo SiC Ceramic Membrane ",
-            video:
-              "https://www.youtube.com/embed/SxjSv34ROHc?si=usxVj-UjMUghHWE6&cc_load_policy=1",
-          },
-        ],
-        disinfection: [
-          {
-            name: "Trojan UV Disinfection System",
-            video:
-              "https://www.youtube.com/embed/u99TSdWneCM?si=JbHc3JaaMIGJfYAB&cc_load_policy=1",
-          },
-          {
-            name: "Ozone System",
-            video: "https://www.youtube.com/embed/4r3W0N2MsaU",
-          },
-        ],
-        thickening_digestion: [
-          {
-            name: "H2Flow Digester Tanks",
-            video:
-              "https://www.youtube.com/embed/OsSvGGoErmg?si=bcBDDltCe9gtm3qV&cc_load_policy=1",
-          },
-          {
-            name: "Ovivo LM Digester Mixer",
-            video:
-              "https://www.youtube.com/embed/4YOZx1JWGd8?si=DuilU3RIwso1tFwA&cc_load_policy=1",
-          },
-        ],
-        biosolids: [
-          {
-            name: "FKC Sludge Dewatering Press",
-            video:
-              "https://www.youtube.com/embed/tuvtf2dK-Fc?si=4QhLkpPrepaCLj7u&cc_load_policy=1",
-          },
-          {
-            name: "EMO Belt Filter Press",
-            video:
-              "https://www.youtube.com/embed/OX7tpsdpe3g?si=LymjvyzzXMxkswie&cc_load_policy=1",
-          },
-        ],
-      };
-
-      const areas = document.querySelectorAll(".equipment-img");
-      const equipmentPopup = document.getElementById("equipment-popup");
-      const videoPopup = document.getElementById("video-popup");
-      const overlay = document.getElementById("overlay");
-      const popupTitle = document.getElementById("popup-title");
-      const equipmentList = document.getElementById("equipment-list");
-      const videoTitle = document.getElementById("video-title");
-      const videoElement = document.getElementById("equipment-video");
-
-      areas.forEach((area) => {
-        area.addEventListener("click", () => {
-          const areaName = area.getAttribute("data-area");
-          showEquipmentPopup(areaName);
-        });
-      });
-
-      function showEquipmentPopup(area) {
-        popupTitle.textContent = `${
-          area.charAt(0).toUpperCase() + area.slice(1).replace(/_/g, " ")
-        } Equipment`;
-        equipmentList.innerHTML = "";
-        equipmentData[area].forEach((equipment) => {
-          const div = document.createElement("div");
-          div.className =
-            "equipment-item list-group-item list-group-item-action";
-          div.textContent = equipment.name;
-          div.addEventListener("click", () => {
-            showVideoPopup(equipment.name, equipment.video);
-          });
-          equipmentList.appendChild(div);
-        });
-        equipmentPopup.classList.add("show");
-        overlay.classList.add("show");
-      }
-
-      function showVideoPopup(name, videoUrl) {
-        // Improved URL cleanup: Remove ?si= param and ensure proper ?/&
-        let cleanUrl = videoUrl.replace(/([?&])si=[^&]*(&?)/, '$1');  // Remove si param, keep ? or &
-        cleanUrl = cleanUrl.replace(/&$/, '');  // Trim trailing & if no params left
-        if (!cleanUrl.includes('?') && /cc_load_policy=1/.test(videoUrl)) {
-          cleanUrl += '?cc_load_policy=1';
-        }
-        videoTitle.textContent = name;
-        console.log('Setting video src to:', cleanUrl); // Debug log
-        // Micro-delay to reduce init lag
-        setTimeout(() => {
-          videoElement.src = cleanUrl;
-        }, 50);
-        videoPopup.classList.add("show");
-        equipmentPopup.classList.remove("show");
-        overlay.classList.add("show");
-      }
-
-      function closePopup(popupId) {
-        document.getElementById(popupId).classList.remove("show");
-        if (popupId === "video-popup") {
-          videoElement.src = ""; // Clear iframe src to stop playback
-        }
-        if (
-          !equipmentPopup.classList.contains("show") &&
-          !videoPopup.classList.contains("show")
-        ) {
-          overlay.classList.remove("show");
-        }
-      }
-    </script>
+    </section>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,289 @@
+{
+  "areas": [
+    {
+      "key": "headworks",
+      "label": "Headworks",
+      "image": "images/Headworks.jpg"
+    },
+    {
+      "key": "primary_clarification",
+      "label": "Primary Clarification",
+      "image": "images/TravellingBridge.jpg"
+    },
+    {
+      "key": "aeration",
+      "label": "Aeration",
+      "image": "images/Aeration.jpg"
+    },
+    {
+      "key": "nutrient_removal",
+      "label": "Nutrient Removal",
+      "image": "images/mabr.jpg"
+    },
+    {
+      "key": "secondary_clarification",
+      "label": "Secondary Clarification",
+      "image": "images/SecondaryClarifier.jpg"
+    },
+    {
+      "key": "tertiary_clarification",
+      "label": "Tertiary Filtration",
+      "image": "images/DiscFilter.jpg"
+    },
+    {
+      "key": "disinfection",
+      "label": "Disinfection",
+      "image": "images/Disinfection.jpg"
+    },
+    {
+      "key": "thickening_digestion",
+      "label": "Digesters & Tanks",
+      "image": "images/Digester.jpg"
+    },
+    {
+      "key": "biosolids",
+      "label": "Biosolids",
+      "image": "images/Dewatering.jpg"
+    }
+  ],
+  "equipment": {
+    "headworks": [
+      {
+        "vendor": {
+          "name": "Atara",
+          "logo": "images/vendors/atara.jpg"
+        },
+        "title": "Grit Classifier",
+        "video": {
+          "type": "youtube",
+          "id": "_bJnsIgltz4"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Franklin Miller",
+          "logo": "images/vendors/franklin-miller.png"
+        },
+        "title": "Spiral Lift Septage Receiver",
+        "video": {
+          "type": "youtube",
+          "id": "dcUkfbeUYzk"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Aqua Caiman Articulating Bar Rake Screen",
+        "video": {
+          "type": "youtube",
+          "id": "3LXL-RKxPQE"
+        }
+      }
+    ],
+    "primary_clarification": [
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Primary Circular Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "S8CIyihMpTw"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Travelling Bridge Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "A5owbzbAshM"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "EcoFlow Lamella Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "QHep68fAOho"
+        }
+      }
+    ],
+    "aeration": [
+      {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.png"
+        },
+        "title": "Blower System",
+        "video": {
+          "type": "youtube",
+          "id": "YWX7nkkCyow"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Continental",
+          "logo": "images/vendors/continental.png"
+        },
+        "title": "Centrifugal Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "i6r8zAizc0s"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Aerostrip Diffuser",
+        "video": {
+          "type": "youtube",
+          "id": "ScnfkhCOjlk"
+        }
+      }
+    ],
+    "nutrient_removal": [
+      {
+        "vendor": {
+          "name": "Fluence",
+          "logo": "images/vendors/fluence.png"
+        },
+        "title": "MABR",
+        "video": {
+          "type": "youtube",
+          "id": "GNhoWTdre20"
+        }
+      },
+      {
+        "vendor": {
+          "name": "ISAM",
+          "logo": "images/vendors/isam.png"
+        },
+        "title": "SBR",
+        "video": {
+          "type": "youtube",
+          "id": "nd6hhDJlmuI"
+        }
+      }
+    ],
+    "secondary_clarification": [
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Secondary Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "PUlTiUHBDFM"
+        }
+      }
+    ],
+    "tertiary_clarification": [
+      {
+        "vendor": {
+          "name": "Nuove Energie",
+          "logo": "images/vendors/nuove-energie.png"
+        },
+        "title": "UltraScreen",
+        "video": {
+          "type": "youtube",
+          "id": "jG9V7B-79T0"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "SiC Ceramic Membrane",
+        "video": {
+          "type": "youtube",
+          "id": "SxjSv34ROHc"
+        }
+      }
+    ],
+    "disinfection": [
+      {
+        "vendor": {
+          "name": "Ozone",
+          "logo": "images/vendors/ozone.png"
+        },
+        "title": "System",
+        "video": {
+          "type": "youtube",
+          "id": "4r3W0N2MsaU"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Trojan",
+          "logo": "images/vendors/trojan.png"
+        },
+        "title": "UV Disinfection System",
+        "video": {
+          "type": "youtube",
+          "id": "u99TSdWneCM"
+        }
+      }
+    ],
+    "thickening_digestion": [
+      {
+        "vendor": {
+          "name": "H2Flow",
+          "logo": "images/vendors/h2flow.png"
+        },
+        "title": "Digester Tanks",
+        "video": {
+          "type": "youtube",
+          "id": "OsSvGGoErmg"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "LM Digester Mixer",
+        "video": {
+          "type": "youtube",
+          "id": "4YOZx1JWGd8"
+        }
+      }
+    ],
+    "biosolids": [
+      {
+        "vendor": {
+          "name": "EMO",
+          "logo": "images/vendors/emo.png"
+        },
+        "title": "Belt Filter Press",
+        "video": {
+          "type": "youtube",
+          "id": "OX7tpsdpe3g"
+        }
+      },
+      {
+        "vendor": {
+          "name": "FKC",
+          "logo": "images/vendors/fkc.png"
+        },
+        "title": "Sludge Dewatering Press",
+        "video": {
+          "type": "youtube",
+          "id": "tuvtf2dK-Fc"
+        }
+      }
+    ]
+  }
+}
