@@ -8,7 +8,23 @@
   </head>
 
   <body>
-    <div class="app-shell">
+<section id="demoScreen" class="demo-screen">
+  <div class="demo-image-wrap">
+    <div class="demo-image-wrapper">
+  <img id="demoImageA" class="demo-image is-active" />
+  <img id="demoImageB" class="demo-image" />
+</div>
+
+    <div class="demo-overlay">
+      <div class="demo-overlay-inner">
+        <h1>H2Flow Wastewater Treatment Solutions</h1>
+        <p>Tap anywhere to explore the interactive equipment map</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="app-shell is-hidden">
       <header class="app-header">
         <div class="brand-wrap">
           <button class="brand-button" type="button" aria-label="H2Flow">
@@ -28,6 +44,7 @@
           <button id="fullscreenButton" class="ghost-button" type="button">
             Fullscreen
           </button>
+          <button id="demoButton" class="ghost-button">Demo</button>
         </div>
       </header>
       <main class="app-main">
@@ -97,9 +114,8 @@
             gyroscope;
             picture-in-picture;
           "
-          allowfullscreen
           referrerpolicy="strict-origin-when-cross-origin"
-          loading="lazy"
+  
         ></iframe
         ><video
           id="html5Video"
@@ -110,6 +126,6 @@
         ></video>
       </div>
     </section>
-    <script src="app.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

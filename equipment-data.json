@@ -17,7 +17,7 @@
     },
     {
       "key": "nutrient_removal",
-      "label": "Nutrient Removal",
+      "label": "Biological Nutrient Removal",
       "image": "images/mabr.jpg"
     },
     {
@@ -61,13 +61,46 @@
       },
       {
         "vendor": {
+          "name": "Biorem",
+          "logo": "images/vendors/biorem.png"
+        },
+        "title": "Biofilter Odour Control Systems",
+        "video": {
+          "type": "youtube",
+          "id": "7btMVF0gtSI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Atlas-SSI",
+          "logo": "images/vendors/atlas-ssi.png"
+        },
+        "title": "316(b) Compliant Travelling Screen",
+        "video": {
+          "type": "wistia",
+          "id": "09ltuvmo0g"
+        }
+      },
+      {
+        "vendor": {
           "name": "Franklin Miller",
-          "logo": "images/vendors/franklin-miller.png"
+          "logo": "images/vendors/franklin-miller.jpg"
         },
         "title": "Spiral Lift Septage Receiver",
         "video": {
           "type": "youtube",
           "id": "dcUkfbeUYzk"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Franklin Miller",
+          "logo": "images/vendors/franklin-miller.jpg"
+        },
+        "title": "Taskmaster Sweage Grinder",
+        "video": {
+          "type": "youtube",
+          "id": "TBG2m1zNx-Q"
         }
       },
       {
@@ -79,6 +112,28 @@
         "video": {
           "type": "youtube",
           "id": "3LXL-RKxPQE"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Aqua Guard Self-Cleaning Wastewater Screen",
+        "video": {
+          "type": "youtube",
+          "id": "cma_dDFofN4"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Bosker Automatic Raking Screen",
+        "video": {
+          "type": "youtube",
+          "id": "boUAtL5KN_8"
         }
       }
     ],
@@ -121,12 +176,34 @@
       {
         "vendor": {
           "name": "Aerzen",
-          "logo": "images/vendors/aerzen.png"
+          "logo": "images/vendors/aerzen.jpg"
         },
-        "title": "Blower System",
+        "title": "PD Blowers",
         "video": {
           "type": "youtube",
           "id": "YWX7nkkCyow"
+        }
+      },
+        {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.jpg"
+        },
+        "title": "High Speed Turbo Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "N5hbio6uf0M"
+        }
+      },
+        {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.jpg"
+        },
+        "title": "Delta Hybrid Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "yj0n_0x_71g"
         }
       },
       {
@@ -150,13 +227,46 @@
           "type": "youtube",
           "id": "ScnfkhCOjlk"
         }
+      },
+      {
+        "vendor": {
+          "name": "EnviroMix",
+          "logo": "images/vendors/enviromix.png"
+        },
+        "title": "FlexZone System",
+        "video": {
+          "type": "youtube",
+          "id": "gOhCSVKKDMo"
+        }
+      },
+      {
+        "vendor": {
+          "name": "EnviroMix",
+          "logo": "images/vendors/enviromix.png"
+        },
+        "title": "Compressed Gas Mixing",
+        "video": {
+          "type": "youtube",
+          "id": "tqf-jjRSFq0"
+        }
+      },
+      {
+        "vendor": {
+          "name": "NexTTurbo",
+          "logo": "images/vendors/nextturbo.png"
+        },
+        "title": "Compressed Gas Mixing",
+        "video": {
+          "type": "youtube",
+          "id": "SbY634eRoFU"
+        }
       }
     ],
     "nutrient_removal": [
       {
         "vendor": {
           "name": "Fluence",
-          "logo": "images/vendors/fluence.png"
+          "logo": "images/vendors/fluence.jpg"
         },
         "title": "MABR",
         "video": {
@@ -166,13 +276,46 @@
       },
       {
         "vendor": {
-          "name": "ISAM",
-          "logo": "images/vendors/isam.png"
+          "name": "Fluidyne",
+          "logo": "images/vendors/fluidyne.jpg"
         },
-        "title": "SBR",
+        "title": "ISAM SBR",
         "video": {
           "type": "youtube",
           "id": "nd6hhDJlmuI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Granite AGS",
+        "video": {
+          "type": "youtube",
+          "id": "iYlh8OdtCY8"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "SiC Ceramic Membrane MBR",
+        "video": {
+          "type": "youtube",
+          "id": "SxjSv34ROHc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Carrousel System",
+        "video": {
+          "type": "youtube",
+          "id": "4pDjO1zC6iQ"
         }
       }
     ],
@@ -193,9 +336,9 @@
       {
         "vendor": {
           "name": "Nuove Energie",
-          "logo": "images/vendors/nuove-energie.png"
+          "logo": "images/vendors/nuoveenergie.png"
         },
-        "title": "UltraScreen",
+        "title": "UltraScreen Gen3 Disc Filter",
         "video": {
           "type": "youtube",
           "id": "jG9V7B-79T0"
@@ -211,29 +354,40 @@
           "type": "youtube",
           "id": "SxjSv34ROHc"
         }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Dynasand Filter",
+        "video": {
+          "type": "youtube",
+          "id": "2fYRv2p408M"
+        }
       }
     ],
     "disinfection": [
       {
         "vendor": {
-          "name": "Ozone",
-          "logo": "images/vendors/ozone.png"
+          "name": "Trojan",
+          "logo": "images/vendors/trojan.jpg"
         },
-        "title": "System",
+        "title": "UVSigna Disinfection System",
         "video": {
           "type": "youtube",
-          "id": "4r3W0N2MsaU"
+          "id": "mjkE7jZEhBc"
         }
       },
       {
         "vendor": {
           "name": "Trojan",
-          "logo": "images/vendors/trojan.png"
+          "logo": "images/vendors/trojan.jp[g"
         },
-        "title": "UV Disinfection System",
+        "title": "UV3000Plus Disinfection System",
         "video": {
           "type": "youtube",
-          "id": "u99TSdWneCM"
+          "id": "xIw_SD29LSw"
         }
       }
     ],
@@ -241,7 +395,7 @@
       {
         "vendor": {
           "name": "H2Flow",
-          "logo": "images/vendors/h2flow.png"
+          "logo": "images/vendors/h2flowtanks.png"
         },
         "title": "Digester Tanks",
         "video": {
@@ -259,13 +413,35 @@
           "type": "youtube",
           "id": "4YOZx1JWGd8"
         }
+      },
+      {
+        "vendor": {
+          "name": "Fluence",
+          "logo": "images/vendors/fluence.jpg"
+        },
+        "title": "Anaerobic Digesters",
+        "video": {
+          "type": "youtube",
+          "id": "H3PfJ3g4jaw"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Unison",
+          "logo": "images/vendors/unison.png"
+        },
+        "title": "Biogas Conditioning",
+        "video": {
+          "type": "youtube",
+          "id": "tU3kswLl0tM"
+        }
       }
     ],
     "biosolids": [
       {
         "vendor": {
           "name": "EMO",
-          "logo": "images/vendors/emo.png"
+          "logo": "images/vendors/emo.jpg"
         },
         "title": "Belt Filter Press",
         "video": {
@@ -282,6 +458,28 @@
         "video": {
           "type": "youtube",
           "id": "tuvtf2dK-Fc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/fkc.png"
+        },
+        "title": "Rotary Drum Thickener",
+        "video": {
+          "type": "youtube",
+          "id": "jH7wSGLW9jI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Biorem",
+          "logo": "images/vendors/biorem.jpg"
+        },
+        "title": "Biofilter Odour Control Systems",
+        "video": {
+          "type": "youtube",
+          "id": "7btMVF0gtSI"
         }
       }
     ]
