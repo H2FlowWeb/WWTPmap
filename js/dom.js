@@ -1,0 +1,31 @@
+export const state = {
+  data: null,
+  currentArea: null,
+  lastTap: 0,
+  demoMode: true,
+  demoSlideTimer: null,
+  currentDemoSlide: 0,
+  demoSlides: [],
+};
+
+export const els = {
+  status: document.getElementById("statusCard"),
+  grid: document.getElementById("tileGrid"),
+  overlay: document.getElementById("overlay"),
+  equipmentModal: document.getElementById("equipmentModal"),
+  equipmentList: document.getElementById("equipmentList"),
+  equipmentModalTitle: document.getElementById("equipmentModalTitle"),
+  videoModal: document.getElementById("videoModal"),
+  videoModalTitle: document.getElementById("videoModalTitle"),
+  videoFrame: document.getElementById("videoFrame"),
+  html5Video: document.getElementById("html5Video"),
+  equipmentCloseButton: document.getElementById("equipmentCloseButton"),
+  videoCloseButton: document.getElementById("videoCloseButton"),
+  fullscreenButton: document.getElementById("fullscreenButton"),
+  appShell: document.querySelector(".app-shell"),
+  demoScreen: document.getElementById("demoScreen"),
+  demoImageA: document.getElementById("demoImageA"),
+  demoImageB: document.getElementById("demoImageB"),
+  demoTitle: document.getElementById("demoTitle"),
+  demoButton: document.getElementById("demoButton"),
+};
