@@ -1,0 +1,48 @@
+{ "areas": [
+    {
+      "key": "headworks",
+      "label": "Headworks",
+      "image": "./images/headworks.png"
+    },
+    {
+      "key": "clarification",
+      "label": "Clarification",
+      "image": "./images/travellingBridge.png"
+    },
+    {
+      "key": "aeration",
+      "label": "Aeration",
+      "image": "./images/aeration.png"
+    },
+    {
+      "key": "nutrient_removal",
+      "label": "Biological Nutrient Removal",
+      "image": "./images/mabr.png"
+    },
+    {
+      "key": "pumping",
+      "label": "Pumping & Conveyance",
+      "image": "./images/pumping.png"
+    },
+    {
+      "key": "tertiary_clarification",
+      "label": "Tertiary Filtration",
+      "image": "./images/discfilter.png"
+    },
+    {
+      "key": "disinfection",
+      "label": "Disinfection",
+      "image": "./images/disinfection.png"
+    },
+    {
+      "key": "digesters_tanks",
+      "label": "Digesters & Tanks",
+      "image": "./images/digester.png"
+    },
+    {
+      "key": "dewatering_thickening",
+      "label": "Dewatering & Thickening",
+      "image": "./images/dewatering.png"
+    }
+  ]
+}

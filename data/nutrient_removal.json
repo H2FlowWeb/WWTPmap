@@ -1,0 +1,60 @@
+{
+    "equipment": [
+      {
+        "vendor": {
+          "name": "Fluence",
+          "logo": "images/vendors/fluence.jpg"
+        },
+        "title": "MABR",
+        "video": {
+          "type": "youtube",
+          "id": "GNhoWTdre20"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Fluidyne",
+          "logo": "images/vendors/fluidyne.jpg"
+        },
+        "title": "ISAM SBR",
+        "video": {
+          "type": "youtube",
+          "id": "nd6hhDJlmuI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Granite AGS",
+        "video": {
+          "type": "youtube",
+          "id": "iYlh8OdtCY8"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "SiC Ceramic Membrane MBR",
+        "video": {
+          "type": "youtube",
+          "id": "SxjSv34ROHc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Carrousel System",
+        "video": {
+          "type": "youtube",
+          "id": "4pDjO1zC6iQ"
+        }
+      }
+    ]
+    
+}

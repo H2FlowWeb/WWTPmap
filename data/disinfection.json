@@ -1,0 +1,27 @@
+{
+    "equipment": [
+        {
+        "vendor": {
+          "name": "Trojan",
+          "logo": "images/vendors/trojan.jpg"
+        },
+        "title": "UVSigna Disinfection System",
+        "video": {
+          "type": "youtube",
+          "id": "mjkE7jZEhBc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Trojan",
+          "logo": "images/vendors/trojan.jp[g"
+        },
+        "title": "UV3000Plus Disinfection System",
+        "video": {
+          "type": "youtube",
+          "id": "xIw_SD29LSw"
+        }
+      }
+    ]
+    
+}

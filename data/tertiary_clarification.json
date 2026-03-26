@@ -1,0 +1,37 @@
+{
+    "equipment": [
+      {
+        "vendor": {
+          "name": "Nuove Energie",
+          "logo": "images/vendors/nuoveenergie.png"
+        },
+        "title": "UltraScreen Gen3 Disc Filter",
+        "video": {
+          "type": "youtube",
+          "id": "jG9V7B-79T0"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "SiC Ceramic Membrane",
+        "video": {
+          "type": "youtube",
+          "id": "SxjSv34ROHc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Dynasand Filter",
+        "video": {
+          "type": "youtube",
+          "id": "2fYRv2p408M"
+        }
+      }
+    ]
+}

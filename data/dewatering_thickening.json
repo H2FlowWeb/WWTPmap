@@ -1,0 +1,37 @@
+{
+    "equipment":[
+       {
+        "vendor": {
+          "name": "EMO",
+          "logo": "images/vendors/emo.jpg"
+        },
+        "title": "Belt Filter Press",
+        "video": {
+          "type": "youtube",
+          "id": "OX7tpsdpe3g"
+        }
+      },
+      {
+        "vendor": {
+          "name": "FKC",
+          "logo": "images/vendors/fkc.png"
+        },
+        "title": "Sludge Dewatering Press",
+        "video": {
+          "type": "youtube",
+          "id": "tuvtf2dK-Fc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Rotary Drum Thickener",
+        "video": {
+          "type": "youtube",
+          "id": "jH7wSGLW9jI"
+        }
+      }
+    ]
+  }

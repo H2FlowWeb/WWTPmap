@@ -1,0 +1,49 @@
+{
+    "equipment": [
+       {
+        "vendor": {
+          "name": "Atara",
+          "logo": "images/vendors/atara.jpg"
+        },
+        "title": "Shaftless Screw Conveyor",
+        "video": {
+          "type": "youtube",
+          "id": "FmFMfhHSh0g"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Serpentix",
+          "logo": "images/vendors/serpentix.png"
+        },
+        "title": "Continous Path Conveyors",
+        "video": {
+          "type": "youtube",
+          "id": "Y39-FoC4Z6w"
+        }
+      },
+      {
+        "vendor": {
+          "name": "KSB Pumps",
+          "logo": "images/vendors/ksb.png"
+        },
+        "title": "Amaerex Jacked Cooled Pumps",
+        "video": {
+          "type": "youtube",
+          "id": "LgOflzxeAGs"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Seepex",
+          "logo": "images/vendors/seepex.png"
+        },
+        "title": "Progressive Cavity Pumps",
+        "video": {
+          "type": "youtube",
+          "id": "WeI-mxO2-Ak"
+        }
+      }
+    ]
+    
+}

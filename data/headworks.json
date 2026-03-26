@@ -1,0 +1,103 @@
+{
+    "equipment":  [
+      {
+        "vendor": {
+          "name": "Atara",
+          "logo": "images/vendors/atara.jpg"
+        },
+        "title": "Grit Classifier",
+        "video": {
+          "type": "youtube",
+          "id": "_bJnsIgltz4"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Biorem",
+          "logo": "images/vendors/biorem.png"
+        },
+        "title": "Biofilter Odour Control Systems",
+        "video": {
+          "type": "youtube",
+          "id": "7btMVF0gtSI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Atlas-SSI",
+          "logo": "images/vendors/atlas-ssi.png"
+        },
+        "title": "316(b) Compliant Travelling Screen",
+        "video": {
+          "type": "wistia",
+          "id": "09ltuvmo0g"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Franklin Miller",
+          "logo": "images/vendors/franklin-miller.jpg"
+        },
+        "title": "Spiral Lift Septage Receiver",
+        "video": {
+          "type": "youtube",
+          "id": "dcUkfbeUYzk"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Franklin Miller",
+          "logo": "images/vendors/franklin-miller.jpg"
+        },
+        "title": "Taskmaster Sweage Grinder",
+        "video": {
+          "type": "youtube",
+          "id": "TBG2m1zNx-Q"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Aqua Caiman Articulating Bar Rake Screen",
+        "video": {
+          "type": "youtube",
+          "id": "3LXL-RKxPQE"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "Aqua Guard Self-Cleaning Wastewater Screen",
+        "video": {
+          "type": "youtube",
+          "id": "cma_dDFofN4"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Bosker Automatic Raking Screen",
+        "video": {
+          "type": "youtube",
+          "id": "boUAtL5KN_8"
+        }
+      },
+       {
+        "vendor": {
+          "name": "ACME",
+          "logo": "images/vendors/acme.jpg"
+        },
+        "title": "ACME Automactic Strainer",
+        "video": {
+          "type": "youtube",
+          "id": "OFO-effC21M"
+        }
+      }
+    ]
+}

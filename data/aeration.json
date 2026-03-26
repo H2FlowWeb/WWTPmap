@@ -1,0 +1,92 @@
+{ 
+    "equipment":[
+       {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.jpg"
+        },
+        "title": "PD Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "YWX7nkkCyow"
+        }
+      },
+        {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.jpg"
+        },
+        "title": "High Speed Turbo Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "N5hbio6uf0M"
+        }
+      },
+        {
+        "vendor": {
+          "name": "Aerzen",
+          "logo": "images/vendors/aerzen.jpg"
+        },
+        "title": "Delta Hybrid Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "yj0n_0x_71g"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Continental",
+          "logo": "images/vendors/continental.png"
+        },
+        "title": "Centrifugal Blowers",
+        "video": {
+          "type": "youtube",
+          "id": "i6r8zAizc0s"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Aerostrip Diffuser",
+        "video": {
+          "type": "youtube",
+          "id": "ScnfkhCOjlk"
+        }
+      },
+      {
+        "vendor": {
+          "name": "EnviroMix",
+          "logo": "images/vendors/enviromix.png"
+        },
+        "title": "FlexZone System",
+        "video": {
+          "type": "youtube",
+          "id": "gOhCSVKKDMo"
+        }
+      },
+      {
+        "vendor": {
+          "name": "NexTTurbo",
+          "logo": "images/vendors/nextturbo.png"
+        },
+        "title": "Turbo Compressors",
+        "video": {
+          "type": "youtube",
+          "id": "SbY634eRoFU"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Newterra",
+          "logo": "images/vendors/newterra.png"
+        },
+        "title": "Turbo Compressors",
+        "video": {
+          "type": "youtube",
+          "id": "zQn9zrY-Cuk"
+        }
+      }
+    ]
+}

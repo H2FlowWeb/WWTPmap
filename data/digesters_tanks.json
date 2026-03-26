@@ -1,0 +1,82 @@
+{
+    "equipment": [
+       {
+        "vendor": {
+          "name": "H2Flow",
+          "logo": "images/vendors/h2flowtanks.png"
+        },
+        "title": "Digester Tanks",
+        "video": {
+          "type": "youtube",
+          "id": "OsSvGGoErmg"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "LM Digester Mixer",
+        "video": {
+          "type": "youtube",
+          "id": "4YOZx1JWGd8"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Eimix Draft Tube Mixer",
+        "video": {
+          "type": "youtube",
+          "id": "ziZaulijJbI"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "EloVac-P",
+        "video": {
+          "type": "youtube",
+          "id": "7JhzRqiMhjc"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Fluence",
+          "logo": "images/vendors/fluence.jpg"
+        },
+        "title": "Anaerobic Digesters",
+        "video": {
+          "type": "youtube",
+          "id": "H3PfJ3g4jaw"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Unison",
+          "logo": "images/vendors/unison.png"
+        },
+        "title": "Biogas Conditioning",
+        "video": {
+          "type": "youtube",
+          "id": "tU3kswLl0tM"
+        }
+      },
+      {
+        "vendor": {
+          "name": "EnviroMix",
+          "logo": "images/vendors/enviromix.png"
+        },
+        "title": "BioMix System",
+        "video": {
+          "type": "youtube",
+          "id": "ryGzSQyxIHs"
+        }
+      }
+    ]
+    
+}

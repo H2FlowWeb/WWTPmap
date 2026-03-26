@@ -1,0 +1,48 @@
+ {
+    "equipment": [
+        {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Primary Circular Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "S8CIyihMpTw"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Travelling Bridge Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "A5owbzbAshM"
+        }
+      },
+       {
+        "vendor": {
+          "name": "Parkson",
+          "logo": "images/vendors/parkson.png"
+        },
+        "title": "EcoFlow Lamella Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "QHep68fAOho"
+        }
+      },
+      {
+        "vendor": {
+          "name": "Ovivo",
+          "logo": "images/vendors/ovivo.png"
+        },
+        "title": "Secondary Clarifier",
+        "video": {
+          "type": "youtube",
+          "id": "PUlTiUHBDFM"
+        }
+      }
+    ]
+}
